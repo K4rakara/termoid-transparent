@@ -2,5 +2,5 @@
 # Version 2
 
 kpackagetool5 -t Plasma/Applet -u package
-killall plasmashell
-kstart5 plasmashell
+pkill -9 plasmashell
+kstart5 plasmashell > /dev/null

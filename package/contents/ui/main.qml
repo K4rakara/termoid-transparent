@@ -25,7 +25,7 @@ import org.kde.plasma.plasmoid 2.0
 import org.kde.plasma.core 2.0 as PlasmaCore
 import org.kde.plasma.components 2.0 as PlasmaComponents
 
-import QMLTermWidget 1.0
+import QmlTermWidgetTransparent 1.0
 
 
 import "../code/utils.js" as Utils
@@ -36,8 +36,8 @@ Item{
     width: plasmoid.configuration.width
     height: plasmoid.configuration.height
 
-    Layout.minimumWidth: units.gridUnit * 10
-    Layout.minimumHeight: units.gridUnit * 10
+    Layout.minimumWidth: units.gridUnit * 4
+    Layout.minimumHeight: units.gridUnit * 4
     
     Plasmoid.preferredRepresentation: Plasmoid.fullRepresentation
     Plasmoid.backgroundHints: plasmoid.configuration.showBackground ? PlasmaCore.Types.DefaultBackground : PlasmaCore.Types.NoBackground
@@ -66,7 +66,7 @@ Item{
     onWidthChanged: { plasmoid.configuration.width = main.width }
     onHeightChanged: { plasmoid.configuration.height = main.height }
 
-    QMLTermWidget {
+    QmlTermWidgetTransparent {
         id: terminal
         anchors.fill: parent
         

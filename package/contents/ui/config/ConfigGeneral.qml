@@ -117,6 +117,7 @@ ConfigPage {
                         ListElement { text: "WhiteOnBlack"; }
                         ListElement { text: "BreezeModified"; }
                         ListElement { text: "cool-retro-term"; }
+						ListElement { text: "RikkaDark"; }
                     }
                 }
 
